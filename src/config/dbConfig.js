@@ -1,7 +1,8 @@
 const mongoose = require('mongoose')
+const dbUrl = require('../config/serverConfig')
 
 const connection = () => {
-    mongoose.connect('mongodb://localhost/actAssignment_db_dev')
+    mongoose.connect(dbUrl)
 }
 
 module.exports = connection
