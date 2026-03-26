@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const setUpAndStartServer = () => {
     
-    connection();
+    await connection();
     const app = express()
     
     app.use(cors({
