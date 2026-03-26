@@ -11,7 +11,7 @@ const setUpAndStartServer = () => {
     const app = express()
     
     app.use(cors({
-      origin: "https://incomparable-malabi-3277ae.netlify.app/login",
+      origin: "https://actassignment.netlify.app/login",
       credentials: true
     }));
     app.use(bodyParser.json())
