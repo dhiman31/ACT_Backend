@@ -5,7 +5,7 @@ const connection = require('./config/dbConfig')
 const v1ApiRoutes = require('./routes/index')
 const cors = require('cors');
 
-const setUpAndStartServer = () => {
+const setUpAndStartServer = async () => {
     
     await connection();
     const app = express()
